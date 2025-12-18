@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакуленко Ксения | Геймдизайнер</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-opensans bg-light text-text-dark text-lg leading-relaxed transition-all duration-300 dark:bg-dark-light dark:text-text-light">
+    <!-- Theme Toggle -->
+    <div id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-light shadow-md z-[999] transition-all duration-300 dark:bg-dark dark:shadow-dark">
+        <div class="container">
+            <nav class="flex justify-between items-center py-6">
+                <a href="#" class="logo">
+                    Kseniya<span>Vakulenko</span>
+                </a>
+                <div id="mobileMenuBtn" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#experience" class="nav-link">Опыт</a></li>
+                    <li><a href="#education" class="nav-link">Образование</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#skills" class="nav-link">Навыки</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <!-- Текст справа -->
+                <div class="hero-text-side">
+                    <h1 class="text-gradient">Вакуленко Ксения Сергеевна</h1>
+                    <h2>Геймдизайнер & Разработчик</h2>
+                    <p>Добро пожаловать на мой сайт-портфолио! Здесь вы найдете информацию о моих проектах, опыте работы и навыках в области геймдизайна и разработки игр. Я создаю уникальные игровые механики и воплощаю креативные идеи в жизнь.</p>
+                    <a href="#experience" class="btn">Посмотреть опыт</a>
+                </div>
+                
+                <!-- Фото слева -->
+                <div class="hero-photo-side">
+                    <div class="photo-frame-large">
+                        <img src="изображения/photo.png" alt="Фото Ксении Вакуленко, геймдизайнера" class="main-photo">
+                        <div class="photo-shine"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-bg"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Обо мне</h2>
+                    <p>Моя страсть — создание захватывающих игровых миров и механик, которые увлекают игроков. Я специализируюсь на разработке концепций игр, проектировании механик и документации.</p>
+                    <p>Помимо геймдизайна, я также занимаюсь программированием и веб-разработкой. В свободное время веду стримы на Twitch, где делюсь процессом создания игр.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Возраст:</span>
+                            <span>22 года (родилась 23 октября 2003)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Телефон:</span>
+                            <span>+7 (911) 830-07-64</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span>ksyyksii25vakuvava@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Город:</span>
+                            <span>Санкт-Петербург</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="relative rounded-2xl overflow-hidden shadow-card hover:translate-y-[-10px] hover:scale-[1.02] hover:shadow-xl transition-all duration-300 w-[380px] h-[450px]">
+                        <img src="изображения/cod.jpg" alt="Ксения Вакуленко" class="w-full h-full object-cover object-top transition-transform duration-800 hover:scale-105" style="width: 500px;">
+                        <div class="photo-shine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Опыт работы</h2>
+                <p>Мой профессиональный путь в игровой индустрии и IT</p>
+            </div>
+            
+            <div class="experience-cards">
+                <!-- Карточка 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Геймдизайнер</h3>
+                            <p class="company-name">Game Wheel Studio</p>
+                            <p class="experience-date">Июль 2024 — настоящее время • 1 год 6 месяцев</p>
+                        </div>
+                    </div>
+                    <div class="experience-details">
+                        <p><strong>Информационные технологии, системная интеграция, интернет</strong></p>
+                        <p><strong>Разработка программного обеспечения</strong></p>
+                        
+                        <div class="responsibilities">
+                            <h4>Должностные обязанности:</h4>
+                            <ul>
+                                <li>Работа над механиками игры</li>
+                                <li>Написание документной части</li>
+                                <li>Проектирование игровых систем</li>
+                                <li>Балансировка игрового процесса</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="projects">
+                            <h4>Ключевые проекты:</h4>
+                            <p><strong>Игра «Atrophia: Diseased Lands»</strong> — ролевая игра в жанре dark fantasy с уникальной боевой системой и глубоким сюжетом.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Web-дизайнер / Помощник программиста</h3>
+                            <p class="company-name">GODapps</p>
+                            <p class="experience-date">Ноябрь 2020 — Февраль 2023 • 2 года 4 месяца</p>
+                        </div>
+                    </div>
+                    <div class="experience-details">
+                        <p><strong>Разработка веб-приложений и мобильных решений</strong></p>
+                        
+                        <div class="responsibilities">
+                            <h4>Должностные обязанности:</h4>
+                            <ul>
+                                <li>Создание дизайна продукта</li>
+                                <li>Разработка кода</li>
+                                <li>UI/UX дизайн</li>
+                                <li>Тестирование и отладка</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="projects">
+                            <h4>Ключевые проекты:</h4>
+                            <ul>
+                                <li><strong>Сайт для студентов СПб ГБПОУ «КИТ»</strong> — информационный портал с личным кабинетом</li>
+                                <li><strong>Мобильное приложение для студентов СПб ГБПОУ «КИТ»</strong> — приложение с функциями расписания и оценок</li>
+                                <li><strong>Логотип СПб ГБПОУ «КИТ»</strong> — разработка современного логотипа для колледжа</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Образование</h2>
+                <p>Мой образовательный путь и курсы повышения квалификации</p>
+            </div>
+            
+            <div class="education-cards">
+                <!-- Карточка 1 -->
+                <div class="education-card bg-light dark:bg-dark rounded-2xl p-8 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-diploma-herzen">
+                    <div class="education-icon w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content flex-1">
+                        <div class="education-header mb-5 flex justify-between items-start flex-wrap gap-4">
+                            <div>
+                                <h3 class="text-2xl text-text-dark dark:text-text-light mb-2">Российский государственный педагогический университет им. А.И. Герцена</h3>
+                                <p class="education-location text-lg text-primary font-medium">Санкт-Петербург</p>
+                            </div>
+                            <span class="education-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2027 (ожидается)</span>
+                        </div>
+                        <div class="education-details mb-6">
+                            <p class="text-lg mb-2"><strong>Неоконченное высшее образование</strong></p>
+                            <p class="text-lg mb-2"><strong>Направление:</strong> 09.03.02 Информационные системы и технологии</p>
+                            <p class="text-lg"><strong>Специализация:</strong> Информационные технологии в дизайне</p>
+                        </div>
+                        <button class="btn-view-doc">Просмотреть документ</button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="education-card bg-light dark:bg-dark rounded-2xl p-8 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-diploma-kit">
+                    <div class="education-icon w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content flex-1">
+                        <div class="education-header mb-5 flex justify-between items-start flex-wrap gap-4">
+                            <div>
+                                <h3 class="text-2xl text-text-dark dark:text-text-light mb-2">Санкт-Петербургский колледж информационных технологий</h3>
+                                <p class="education-location text-lg text-primary font-medium">Санкт-Петербург</p>
+                            </div>
+                            <span class="education-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2023</span>
+                        </div>
+                        <div class="education-details mb-6">
+                            <p class="text-lg mb-2"><strong>Среднее профессиональное образование</strong></p>
+                            <p class="text-lg mb-2"><strong>Направление:</strong> 09.02.07 Информационные системы и программирование</p>
+                            <p class="text-lg"><strong>Квалификация:</strong> Специалист по информационным системам</p>
+                        </div>
+                        <button class="btn-view-doc">Просмотреть диплом</button>
+                    </div>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="education-card bg-light dark:bg-dark rounded-2xl p-8 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-certificate-leti">
+                    <div class="education-icon w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content flex-1">
+                        <div class="education-header mb-5 flex justify-between items-start flex-wrap gap-4">
+                            <div>
+                                <h3 class="text-2xl text-text-dark dark:text-text-light mb-2">Коммуникационные стратегии и продвижение в цифровой среде</h3>
+                                <p class="education-location text-lg text-primary font-medium">Цифровая кафедра ЛЭТИ</p>
+                            </div>
+                            <span class="education-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2025</span>
+                        </div>
+                        <div class="education-details mb-6">
+                            <p class="text-lg mb-2"><strong>Повышение квалификации, курсы</strong></p>
+                            <p class="text-lg"><strong>Квалификация:</strong> Специалист по коммуникационным стратегиям и продвижению в цифровой среде</p>
+                        </div>
+                        <button class="btn-view-doc">Просмотреть сертификат</button>
+                    </div>
+                </div>
+            </div>
+                        <!-- Сертификаты -->
+            <div class="certificates max-w-4xl mx-auto mb-16">
+                <h3 class="certificates-title text-3xl text-primary text-center mb-8">Электронные сертификаты</h3>
+                <div class="certificates-grid grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Сертификат 1 -->
+                    <div class="certificate-card bg-light dark:bg-dark rounded-2xl p-6 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-certificate-artifact">
+                        <div class="certificate-icon w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-xl flex-shrink-0">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certificate-content flex-1">
+                            <div class="certificate-header flex justify-between items-start mb-4 flex-wrap gap-3">
+                                <h4 class="text-xl text-text-dark dark:text-text-light">Artifact Fantasy Game Jam</h4>
+                                <span class="certificate-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2024</span>
+                            </div>
+                            <p class="text-gray mb-5 leading-relaxed">Участие в игровом джеме по созданию fantasy-игры</p>
+                            <button class="btn-view-cert">Просмотреть сертификат</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Сертификат 2 -->
+                    <div class="certificate-card bg-light dark:bg-dark rounded-2xl p-6 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-certificate-siberian">
+                        <div class="certificate-icon w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-xl flex-shrink-0">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certificate-content flex-1">
+                            <div class="certificate-header flex justify-between items-start mb-4 flex-wrap gap-3">
+                                <h4 class="text-xl text-text-dark dark:text-text-light">Siberian Game Jam</h4>
+                                <span class="certificate-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2024</span>
+                            </div>
+                            <p class="text-gray mb-5 leading-relaxed">Участие в игровом хакатоне</p>
+                            <button class="btn-view-cert">Просмотреть сертификат</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Сертификат 3 -->
+                    <div class="certificate-card bg-light dark:bg-dark rounded-2xl p-6 shadow-card flex gap-6 transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl cursor-pointer border-2 border-transparent hover:border-primary/20" data-modal="modal-certificate-vremya-it">
+                        <div class="certificate-icon w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-xl flex-shrink-0">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certificate-content flex-1">
+                            <div class="certificate-header flex justify-between items-start mb-4 flex-wrap gap-3">
+                                <h4 class="text-xl text-text-dark dark:text-text-light">Время IT</h4>
+                                <span class="certificate-year text-lg font-bold text-primary bg-primary/10 px-4 py-1 rounded-full">2024</span>
+                            </div>
+                            <p class="text-gray mb-5 leading-relaxed">Участие в Хакатон.Игры от ГУАП</p>
+                            <button class="btn-view-cert">Просмотреть сертификат</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Itch.io профиль -->
+            <div class="itchio-profile max-w-4xl mx-auto">
+                <div class="itchio-container bg-light dark:bg-dark rounded-2xl p-10 shadow-card flex flex-col md:flex-row items-center gap-8">
+                    <div class="itchio-icon text-6xl text-[#FA5C5C] flex-shrink-0">
+                        <i class="fab fa-itch-io"></i>
+                    </div>
+                    <div class="itchio-content flex-1 text-center md:text-left">
+                        <h3 class="text-3xl text-[#FA5C5C] mb-4">Мой профиль на itch.io</h3>
+                        <p class="text-lg text-gray mb-6 leading-relaxed">
+                            На моем itch.io профиле вы можете найти мои игровые проекты, прототипы и эксперименты. Это платформа, где я делюсь своими работами с сообществом геймдевелоперов.
+                        </p>
+                        <a href="https://vakuvava.itch.io" target="_blank" class="btn" style="background: linear-gradient(135deg, #FA5C5C, #FF2D2D);">Посмотреть профиль на itch.io</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Портфолио</h2>
+                <p>Мои проекты в области геймдизайна и разработки</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Все проекты</button>
+                <button class="filter-btn" data-filter="game">Игры</button>
+                <button class="filter-btn" data-filter="web">Веб-проекты</button>
+                <button class="filter-btn" data-filter="design">Дизайн</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Проект 1 -->
+                <div class="portfolio-item" data-category="game">
+                    <div class="portfolio-img">
+                        <img src="изображения/atrophia.jpg" alt="Atrophia: Diseased Lands" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Atrophia: Diseased Lands</h3>
+                        <p>Ролевая игра в жанре dark fantasy с уникальной боевой системой и глубоким сюжетом. Разработана в Game Wheel Studio. Находится в разработке.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unreal Engine 5</span>
+                            <span class="tag">Геймдизайн</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 2 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="изображения/site.png" alt="Сайт для студентов КИТ" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Сайт для студентов КИТ</h3>
+                        <p>Информационный портал для студентов колледжа с личным кабинетом и расписанием, а также встроенным месенджером и дневником.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web-разработка</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 3 -->
+                <div class="portfolio-item" data-category="game">
+                    <div class="portfolio-img">
+                        <img src="изображения/educ.png" alt="Выпускной вызов" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Выпускной вызов</h3>
+                        <p>Казуальная игра с элементами головоломок в приключенческом жанре с управлением point and click. Игра для детей с поучительным контентом.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Прототипирование</span>
+                            <span class="tag">C#</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 4 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="изображения/logo.png" alt="Логотип СПб ГБПОУ КИТ" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Логотип СПб ГБПОУ "КИТ"</h3>
+                        <p>Разработка современного логотипа для колледжа информационных технологий, отражающего его IT-направленность.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Графический дизайн</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 5 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="изображения/mobapp.png" alt="Мобильное приложение КИТ" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Мобильное приложение КИТ</h3>
+                        <p>Приложение для студентов с функциями просмотра расписания, оценок и учебных материалов.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Мобильная разработка</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Проект 6 -->
+                <div class="portfolio-item" data-category="game">
+                    <div class="portfolio-img">
+                        <img src="изображения/cocktail.png" alt="Cocktail Cleansing" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cocktail Cleansing</h3>
+                        <p>Аркадный раннер в киберпанк-стиле с системами прокачки и кастомизации персонажа.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Геймдизайн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Twitch Section -->
+    <section class="twitch-section section-padding bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
+        <div class="container">
+            <div class="max-w-3xl mx-auto">
+                <div class="twitch-icon text-6xl text-[#9146FF] mb-6">
+                    <i class="fab fa-twitch"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl text-[#9146FF] mb-6">Стримы на Twitch</h2>
+                <p class="text-xl text-gray mb-6 leading-relaxed">
+                    Я регулярно стримлю процесс разработки игр, геймдизайн, а также прохождение интересных инди-игр. Присоединяйтесь к моему коммьюнити!
+                </p>
+                <p class="text-xl text-gray mb-8 leading-relaxed">
+                    На стримах я делюсь своим опытом, отвечаю на вопросы о геймдеве и просто хорошо провожу время с зрителями.
+                </p>
+                <a href="https://www.twitch.tv/vakuvava" target="_blank" class="btn" style="background: linear-gradient(135deg, #9146FF, #6441A5);">Перейти на мой Twitch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Навыки</h2>
+                <p>Мои профессиональные компетенции и умения</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Навык 1 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Геймдизайн</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="level-text">90%</span>
+                    </div>
+                    <p>Проектирование механик, балансировка, создание документации, прототипирование</p>
+                </div>
+                
+                <!-- Навык 2 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Программирование</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="level-text">85%</span>
+                    </div>
+                    <p>C# / Unity, C/C++, веб-разработка, 1С программирование, базы данных</p>
+                </div>
+                
+                <!-- Навык 3 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Дизайн</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="level-text">80%</span>
+                    </div>
+                    <p>Figma, UI/UX, веб-дизайн, графический дизайн, создание логотипов</p>
+                </div>
+                
+                <!-- Навык 4 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Языки</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 70%;"></div>
+                        </div>
+                        <span class="level-text">70%</span>
+                    </div>
+                    <p>Русский (родной), английский (B1 - средний), коммуникационные навыки</p>
+                </div>
+                
+                <!-- Навык 5 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Инструменты</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="level-text">75%</span>
+                    </div>
+                    <p>Unity, Visual Studio, MS Office, Git, 1С, Photoshop</p>
+                </div>
+                
+                <!-- Навык 6 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-progress" style="width: 88%;"></div>
+                        </div>
+                        <span class="level-text">88%</span>
+                    </div>
+                    <p>Командная работа, документация, решение проблем, креативное мышление</p>
+                </div>
+            </div>
+            
+            <div class="skills-list-container bg-light dark:bg-dark rounded-2xl p-10 shadow-card mt-12">
+                <div class="skills-category mb-8">
+                    <h3 class="text-3xl text-primary mb-6 flex items-center gap-3">
+                        <i class="fas fa-star"></i> Ключевые навыки
+                    </h3>
+                    <div class="skill-tags flex flex-wrap gap-4">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Геймдизайн</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">UI/UX</span>
+                        <span class="skill-tag">Веб-разработка</span>
+                        <span class="skill-tag">Прототипирование</span>
+                        <span class="skill-tag">Балансировка игр</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Английский B1</span>
+                        <span class="skill-tag">1С программирование</span>
+                        <span class="skill-tag">Графический дизайн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+                <p>Свяжитесь со мной для сотрудничества</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p>+7 (911) 8300764</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>ksyyksii25vakuvava@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>Санкт-Петербург, Россия</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-twitch"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Twitch</h3>
+                            <p>twitch.tv/kseniyavakulenko</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-itch-io"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>itch.io</h3>
+                            <p>ksenia-vakulenko.itch.io</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        <button type="submit" class="btn w-full">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="logo text-white mb-5 inline-block">Ksenia<span class="text-primary-light">Vakulenko</span></a>
+            <p class="text-lg mb-8">Геймдизайнер & Разработчик</p>
+            
+            <div class="social-links">
+                <a href="https://www.twitch.tv/vakuvava" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a href="https://vakuvava.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
+                <a href="https://vk.com/vakuvava" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/Vakuvava" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/KseniyaVakulenko" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <p class="text-lg opacity-80">&copy; 2025 Вакуленко Ксения. Все права защищены.</p>
+        </div>
+    </footer>
+
+        <!-- Модальные окна для документов -->
+    <div class="modal" id="modal-diploma-herzen">
+        <div class="modal-content">
+            <div class="modal-header flex justify-between items-center p-6 border-b border-black/10 dark:border-white/10">
+                <h3 class="text-2xl text-text-dark dark:text-text-light">РГПУ им. А.И. Герцена - Справка об обучении</h3>
+                <button class="modal-close text-3xl text-gray hover:text-primary transition-all duration-300">&times;</button>
+            </div>
+            <div class="modal-body p-6">
+                <div class="document-preview bg-black/5 dark:bg-white/5 rounded-xl p-10 text-center mb-8 min-h-[300px] flex justify-center items-center">
+                    <div class="document-placeholder">
+                        <img src="изображения/sprVYZ.png" alt="справка вуз" class="max-w-full h-auto rounded-lg" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="document-details bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
+                    <p class="text-lg mb-3"><strong>Учебное заведение:</strong> Российский государственный педагогический университет им. А.И. Герцена</p>
+                    <p class="text-lg mb-3"><strong>Статус:</strong> Неоконченное высшее образование</p>
+                    <p class="text-lg mb-3"><strong>Направление:</strong> 09.03.02 Информационные системы и технологии</p>
+                    <p class="text-lg mb-3"><strong>Специализация:</strong> Информационные технологии в дизайне</p>
+                    <p class="text-lg"><strong>Год окончания:</strong> 2027 (ожидается)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-diploma-kit">
+        <div class="modal-content">
+            <div class="modal-header flex justify-between items-center p-6 border-b border-black/10 dark:border-white/10">
+                <h3 class="text-2xl text-text-dark dark:text-text-light">СПб ГБПОУ "КИТ" - Диплом о среднем профессиональном образовании</h3>
+                <button class="modal-close text-3xl text-gray hover:text-primary transition-all duration-300">&times;</button>
+            </div>
+            <div class="modal-body p-6">
+                <div class="document-preview bg-black/5 dark:bg-white/5 rounded-xl p-10 text-center mb-8 min-h-[300px] flex justify-center items-center">
+                    <div class="document-placeholder">
+                        <img src="изображения/diplCOL.jpg" alt="диплом колледжа" class="max-w-full h-auto rounded-lg" style="width: 700px;">
+                    </div>
+                </div>
+                <div class="document-details bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
+                    <p class="text-lg mb-3"><strong>Учебное заведение:</strong> Санкт-Петербургский колледж информационных технологий</p>
+                    <p class="text-lg mb-3"><strong>Статус:</strong> Среднее профессиональное образование</p>
+                    <p class="text-lg mb-3"><strong>Направление:</strong> 09.02.07 Информационные системы и программирование</p>
+                    <p class="text-lg mb-3"><strong>Квалификация:</strong> Специалист по информационным системам</p>
+                    <p class="text-lg"><strong>Год окончания:</strong> 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-certificate-artifact">
+        <div class="modal-content">
+            <div class="modal-header flex justify-between items-center p-6 border-b border-black/10 dark:border-white/10">
+                <h3 class="text-2xl text-text-dark dark:text-text-light">Artifact Fantasy Game Jam - Сертификат участника</h3>
+                <button class="modal-close text-3xl text-gray hover:text-primary transition-all duration-300">&times;</button>
+            </div>
+            <div class="modal-body p-6">
+                <div class="document-preview bg-black/5 dark:bg-white/5 rounded-xl p-10 text-center mb-8 min-h-[300px] flex justify-center items-center">
+                    <div class="document-placeholder">
+                        <img src="изображения/Artifact game jam.jpg" alt="Artifact game jam" class="max-w-full h-auto rounded-lg" style="width: 400px;">
+                    </div>
+                </div>
+                <div class="document-details bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
+                    <p class="text-lg mb-3"><strong>Мероприятие:</strong> Artifact Fantasy Game Jam</p>
+                    <p class="text-lg mb-3"><strong>Тип:</strong> Игровой джем</p>
+                    <p class="text-lg mb-3"><strong>Год:</strong> 2024</p>
+                    <p class="text-lg mb-3"><strong>Достижение:</strong> Участие в создании fantasy-игры в рамках ограниченного времени</p>
+                    <p class="text-lg"><strong>Навыки:</strong> Rapid prototyping, командная работа, геймдизайн</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Модальное окно для ЛЭТИ (третья карточка образования) -->
+    <div class="modal" id="modal-certificate-leti">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>ЛЭТИ - Сертификат о повышении квалификации</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="document-preview">
+                    <div class="document-placeholder">
+                        <i class="fas fa-certificate"></i>
+                        <p>Здесь будет сканированная копия сертификата</p>
+                        <p class="document-info">Для просмотра реального документа свяжитесь со мной</p>
+                    </div>
+                </div>
+                <div class="document-details">
+                    <p><strong>Организация:</strong> Цифровая кафедра ЛЭТИ</p>
+                    <p><strong>Курс:</strong> Коммуникационные стратегии и продвижение в цифровой среде</p>
+                    <p><strong>Квалификация:</strong> Специалист по коммуникационным стратегиям и продвижению в цифровой среде</p>
+                    <p><strong>Год окончания:</strong> 2025</p>
+                    <p><strong>Объем курса:</strong> 72 академических часа</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для Siberian Game Jam (вторая карточка сертификатов) -->
+    <div class="modal" id="modal-certificate-siberian">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Siberian Game Jam - Сертификат участника</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="document-preview">
+                    <div class="document-placeholder">
+                        <img src="изображения/siberian.png" alt="Siberian Game Jam" class="max-w-full h-auto rounded-lg" style="width: 400px;">
+                    </div>
+                </div>
+                <div class="document-details">
+                    <p><strong>Мероприятие:</strong> Siberian Game Jam</p>
+                    <p><strong>Тип:</strong> Игровой джем</p>
+                    <p><strong>Год:</strong> 2024</p>
+                    <p><strong>Достижение:</strong> Участие в сибирском игровом джеме</p>
+                    <p><strong>Особенности:</strong> Работа в условиях ограниченного времени, создание прототипа игры за 48 часов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для Время IT (третья карточка сертификатов) -->
+    <div class="modal" id="modal-certificate-vremya-it">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Время IT - Сертификат участника</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="document-preview">
+                    <div class="document-placeholder">
+                        <img src="изображения/gyapIT.png" alt="Время IT" class="max-w-full h-auto rounded-lg" style="width: 400px;">
+                    </div>
+                </div>
+                <div class="document-details">
+                    <p><strong>Мероприятие:</strong> Время IT</p>
+                    <p><strong>Тип:</strong> IT-конференция/мероприятие</p>
+                    <p><strong>Год:</strong> 2024</p>
+                    <p><strong>Достижение:</strong> Участие в IT-мероприятии, обмен опытом с коллегами</p>
+                    <p><strong>Темы:</strong> Новые технологии в геймдеве, тренды игровой индустрии</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/script.js"></script>
+</body>
+</html>
