@@ -573,6 +573,11 @@ body {
   font-size: 18px;
 }
 
+.dark body {
+  background-color: #0F0F1B;
+  color: #F5F7FA;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -714,7 +719,7 @@ section {
 }
 
 .nav-links a {
-  color: #a19898;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -742,11 +747,19 @@ section {
   width: 100%;
 }
 
+.dark .nav-links a {
+  color: #F5F7FA;
+}
+
 .mobile-menu-btn {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
   color: #333;
+}
+
+.dark .mobile-menu-btn {
+  color: #F5F7FA;
 }
 
 /* Hero Section */
@@ -1838,10 +1851,6 @@ footer p {
   margin-top: 3rem !important;
 }
 
-.block {
-  display: block !important;
-}
-
 .inline-block {
   display: inline-block !important;
 }
@@ -1852,14 +1861,6 @@ footer p {
 
 .grid {
   display: grid !important;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.h-16 {
-  height: 4rem !important;
 }
 
 .h-20 {
@@ -1880,10 +1881,6 @@ footer p {
 
 .min-h-\[300px\] {
   min-height: 300px !important;
-}
-
-.w-16 {
-  width: 4rem !important;
 }
 
 .w-20 {
@@ -1916,10 +1913,6 @@ footer p {
 
 .flex-shrink-0 {
   flex-shrink: 0 !important;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .cursor-pointer {
@@ -2185,18 +2178,6 @@ footer p {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-  transition-duration: 150ms !important;
-}
-
 .transition-all {
   transition-property: all !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -2234,20 +2215,6 @@ footer p {
 /* ========== КОМПОНЕНТЫ ========== */
 
 /* ========== УТИЛИТЫ ========== */
-
-/* Добавьте в конец файла input.css */
-
-.dark .theme-toggle {
-  background: linear-gradient(135deg, #6C63FF, #4A90E2);
-}
-
-.theme-toggle i {
-  transition: transform 0.3s ease;
-}
-
-.theme-toggle:hover i {
-  transform: rotate(30deg);
-}
 
 .hover\:translate-y-\[-10px\]:hover {
   --tw-translate-y: -10px !important;
