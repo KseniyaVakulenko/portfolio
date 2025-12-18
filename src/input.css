@@ -23,6 +23,10 @@
     font-size: 18px;
   }
 
+  .dark body {
+    background-color: #0F0F1B;
+    color: #F5F7FA;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -130,7 +134,7 @@
   }
 
   .nav-links a {
-    color: #a19898;
+    color: #333;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -158,6 +162,9 @@
     width: 100%;
   }
 
+  .dark .nav-links a {
+    color: #F5F7FA;
+  }
 
   .mobile-menu-btn {
     display: none;
@@ -166,6 +173,9 @@
     color: #333;
   }
 
+  .dark .mobile-menu-btn {
+    color: #F5F7FA;
+  }
 
   /* Hero Section */
   .hero {
@@ -176,8 +186,6 @@
     position: relative;
     overflow: hidden;
     padding-top: 100px;
-    opacity: 1 !important;
-    visibility: visible !important;
   }
 
   .hero-wrapper {
@@ -1225,17 +1233,4 @@
     transform: skewX(-25deg);
     animation: shine 3s infinite;
   }
-}
-
-/* Добавьте в конец файла input.css */
-.dark .theme-toggle {
-    background: linear-gradient(135deg, #6C63FF, #4A90E2);
-}
-
-.theme-toggle i {
-    transition: transform 0.3s ease;
-}
-
-.theme-toggle:hover i {
-    transform: rotate(30deg);
 }

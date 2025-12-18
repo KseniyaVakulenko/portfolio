@@ -12,6 +12,12 @@ if (savedTheme === 'dark') {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
     }
+} else {
+    document.documentElement.classList.remove('dark');
+    if (themeIcon) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
 }
 
 // Обработчик клика по кнопке смены темы
@@ -20,21 +26,18 @@ if (themeToggle && themeIcon) {
         const isDark = document.documentElement.classList.contains('dark');
         
         if (isDark) {
-            // Переключаем на светлую тему
             document.documentElement.classList.remove('dark');
             themeIcon.classList.remove('fa-sun');
             themeIcon.classList.add('fa-moon');
             localStorage.setItem('theme', 'light');
+            console.log('Тема изменена на светлую');
         } else {
-            // Переключаем на темную тему
             document.documentElement.classList.add('dark');
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun');
             localStorage.setItem('theme', 'dark');
+            console.log('Тема изменена на темную');
         }
-        
-        // Лог для отладки
-        console.log('Тема изменена:', isDark ? 'светлая' : 'темная');
     });
 }
 
