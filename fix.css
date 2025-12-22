@@ -1,0 +1,600 @@
+/* FIX.CSS - ИСПРАВЛЕНИЯ ДЛЯ САЙТА КСЕНИИ ВАКУЛЕНКО */
+
+/* ========== 1. ИСПРАВЛЕНИЕ ШАПКИ И НАВИГАЦИИ ========== */
+
+/* 1.1. Убираем fixed с шапки по умолчанию */
+header {
+  position: relative !important;
+  top: 0 !important;
+  background-color: #F5F7FA !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+  z-index: 1000 !important;
+}
+
+.dark header {
+  background-color: #1A1A2E !important;
+}
+
+/* Когда скроллим, делаем шапку фиксированной */
+.header-scrolled {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  animation: slideDown 0.3s ease !important;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* 1.2. Исправляем контейнер шапки */
+header .container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+/* 1.3. Исправляем навигационные ссылки - делаем их по центру */
+.nav-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 1 !important;
+  gap: 20px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.nav-links li {
+  margin: 0 !important;
+}
+
+.nav-links a {
+  color: #333 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 17px !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  text-align: center !important;
+  min-width: 80px !important;
+  position: relative !important;
+}
+
+.nav-links a:hover {
+  color: #4A90E2 !important;
+  background-color: rgba(74, 144, 226, 0.15) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2) !important;
+}
+
+.dark .nav-links a {
+  color: #F5F7FA !important;
+}
+
+.dark .nav-links a:hover {
+  background-color: rgba(74, 144, 226, 0.25) !important;
+  color: #4A90E2 !important;
+}
+
+/* 1.4. Исправляем логотип */
+.logo {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  color: #4A90E2 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  margin-right: 40px !important;
+  z-index: 1001 !important;
+  position: relative !important;
+}
+
+.logo span {
+  color: #6C63FF !important;
+}
+
+.dark .logo {
+  color: #4A90E2 !important;
+}
+
+.dark .logo span {
+  color: #6C63FF !important;
+}
+
+/* 1.5. Добавляем padding верхний для всех секций */
+section {
+  padding-top: 120px !important;
+  padding-bottom: 100px !important;
+}
+
+/* Для hero секции - свой отступ */
+#home.hero {
+  padding-top: 100px !important;
+  padding-bottom: 0 !important;
+}
+
+/* 1.6. Мобильная навигация */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: #F5F7FA !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 25px !important;
+    padding: 0 !important;
+    z-index: 998 !important;
+  }
+  
+  .dark .nav-links {
+    background-color: #1A1A2E !important;
+  }
+  
+  .nav-links.active {
+    display: flex !important;
+  }
+  
+  .nav-links a {
+    font-size: 20px !important;
+    padding: 15px 30px !important;
+    min-width: 200px !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+  
+  .dark .nav-links a {
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+  }
+  
+  .logo {
+    margin-right: 0 !important;
+  }
+  
+  .mobile-menu-btn {
+    display: block !important;
+    z-index: 999 !important;
+  }
+}
+
+/* 1.7. Исправляем мобильное меню */
+.mobile-menu-btn {
+  display: none !important;
+  font-size: 1.8rem !important;
+  cursor: pointer !important;
+  color: #333 !important;
+  z-index: 999 !important;
+}
+
+.dark .mobile-menu-btn {
+  color: #F5F7FA !important;
+}
+
+/* ========== 2. ИСПРАВЛЕНИЕ ИЗОБРАЖЕНИЙ PNG ========== */
+
+/* 2.1. Убираем белую подложку у всех изображений */
+img {
+  background-color: transparent !important;
+  border: none !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* 2.2. Особенно для PNG-изображений с прозрачностью */
+img[src$=".png"], 
+img[src*=".png"], 
+.main-photo,
+.portfolio-image,
+.modal-content img,
+.certificate-card img,
+.education-card img {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 2.3. Для основной фотографии в геро-секции */
+.main-photo {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.photo-frame-large {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 2.4. Для изображений в портфолио */
+.portfolio-img {
+  background-color: #333 !important;
+}
+
+.portfolio-image {
+  background-color: transparent !important;
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+}
+
+/* 2.5. Для изображений в about секции */
+.about-image img {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 2.6. Для изображений в модальных окнах */
+.modal-body img {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.document-preview {
+  background-color: transparent !important;
+}
+
+.dark .document-preview {
+  background-color: transparent !important;
+}
+
+/* 2.7. Убираем стандартные фоны у всех контейнеров изображений */
+.photo-frame-large,
+.portfolio-img > *,
+.modal-body > div,
+.document-preview > *,
+.about-image > div {
+  background-color: transparent !important;
+}
+
+/* ========== 3. ИСПРАВЛЕНИЕ КАРТОЧЕК СЕРТИФИКАТОВ ========== */
+
+/* 3.1. Делаем карточки сертификатов шире */
+.certificates-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 30px !important;
+  max-width: 1000px !important;
+  margin: 0 auto 50px !important;
+}
+
+/* 3.2. Улучшаем внешний вид карточек */
+.certificate-card {
+  min-width: 0 !important;
+  flex: 1 !important;
+  padding: 30px !important;
+  transition: all 0.3s ease !important;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 3.3. Для мобильных устройств */
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .certificate-card {
+    padding: 20px !important;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ========== 4. ИСПРАВЛЕНИЕ ГЕРО-СЕКЦИИ ========== */
+
+.hero-wrapper {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 40px !important;
+  align-items: center !important;
+  z-index: 2 !important;
+}
+
+.hero-text-side {
+  padding-left: 20px !important;
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.hero-photo-side {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.hero-bg {
+  position: absolute !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 45% !important;
+  height: 75% !important;
+  background: linear-gradient(135deg, #4A90E2, #6C63FF) !important;
+  opacity: 0.1 !important;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+  animation: morphing 15s infinite !important;
+}
+
+/* ========== 5. ФИКС ДЛЯ КНОПКИ ПЕРЕКЛЮЧЕНИЯ ТЕМЫ ========== */
+
+.theme-toggle {
+  z-index: 1001 !important;
+  position: fixed !important;
+  top: 25px !important;
+  right: 25px !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #4A90E2, #6C63FF) !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+  font-size: 22px !important;
+}
+
+.theme-toggle:hover {
+  transform: rotate(30deg) scale(1.1) !important;
+}
+
+/* ========== 6. АНИМАЦИИ ========== */
+
+@keyframes morphing {
+  0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+  50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+  75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+  100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20%, 100% { left: 140%; }
+}
+
+.photo-shine {
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 60% !important;
+  height: 100% !important;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+  transform: skewX(-25deg) !important;
+  animation: shine 3s infinite !important;
+  pointer-events: none !important;
+}
+
+/* ========== 7. ЭКСТРЕННЫЕ ФИКСЫ ДЛЯ ОБЩИХ ПРОБЛЕМ ========== */
+
+/* 7.1. Убираем возможные конфликты с Tailwind */
+.fixed {
+  position: fixed !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.z-\[999\] {
+  z-index: 999 !important;
+}
+
+/* 7.2. Исправляем отображение текста в темной теме */
+.dark .text-text-dark {
+  color: #F5F7FA !important;
+}
+
+/* 7.3. Исправляем контейнеры для лучшего отображения */
+.container {
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+/* 7.4. Убираем лишние отступы и поля */
+body {
+  overflow-x: hidden !important;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+/* 7.5. Исправляем отображение кнопок */
+.btn, .btn-view-doc, .btn-view-cert {
+  display: inline-block !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  border: none !important;
+  font-family: inherit !important;
+}
+
+/* ========== 8. МЕДИА-ЗАПРОСЫ ДЛЯ АДАПТИВНОСТИ ========== */
+
+@media (max-width: 768px) {
+  /* 8.1. Геро-секция на мобильных */
+  .hero-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    text-align: center !important;
+  }
+  
+  .hero-text-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .hero-text-side h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .hero-text-side h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  /* 8.2. Секция "Обо мне" */
+  .about-content {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  
+  /* 8.3. Карточки опыта и образования */
+  .experience-card, .education-card {
+    padding: 20px !important;
+  }
+  
+  /* 8.4. Фильтры портфолио */
+  .portfolio-filter {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .filter-btn {
+    margin: 5px 0 !important;
+    width: 100% !important;
+    max-width: 200px !important;
+  }
+  
+  /* 8.5. Сетка портфолио */
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 25px !important;
+  }
+  
+  /* 8.6. Сетка навыков */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  /* 8.7. Контактная форма */
+  .contact-container {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 8.8. Для планшетов */
+  .hero-wrapper {
+    gap: 30px !important;
+  }
+  
+  .hero-text-side h1 {
+    font-size: 3rem !important;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+/* ========== ИСПРАВЛЕНИЕ ПЕРЕНОСА "ОБО МНЕ" ========== */
+
+/* 1. Уменьшаем отступы между ссылками */
+.nav-links {
+  gap: 15px !important; /* Было 20px */
+}
+
+/* 2. Уменьшаем padding у ссылок */
+.nav-links a {
+  padding: 10px 15px !important; /* Было 10px 20px */
+  font-size: 16px !important; /* Немного уменьшаем шрифт */
+  min-width: 70px !important; /* Было 80px */
+}
+
+/* 3. Для мобильной версии оставляем большие размеры */
+@media (max-width: 1024px) {
+  .nav-links a {
+    padding: 15px 25px !important;
+    font-size: 18px !important;
+    min-width: 180px !important;
+  }
+}
+
+/* 4. Особенно для ссылки "обо мне" предотвращаем перенос */
+.nav-links a[href="#about"] {
+  white-space: nowrap !important;
+}
+
+
+/* ========== ПРОСТАЯ АНИМИРОВАННАЯ ФИГУРА ========== */
+
+.hero-bg-animated {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    height: 65%;
+    background: linear-gradient(135deg, #4A90E2, #6C63FF); /* Из вашего старого кода: var(--primary-color), var(--secondary-color) */
+    opacity: 0.1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: simple-morphing 12s infinite ease-in-out;
+    z-index: 1;
+}
+
+@keyframes simple-morphing {
+    0% { 
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    33% { 
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    66% { 
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+    100% { 
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+}
+
+/* В темной теме используем те же цвета, что и в старом коде */
+.dark .hero-bg-animated {
+    opacity: 0.15;
+    background: linear-gradient(135deg, #6C63FF, #4A90E2); /* Из старого dark-theme: var(--primary-color), var(--secondary-color) */
+}
+
+/* Скрываем на мобильных */
+@media (max-width: 992px) {
+    .hero-bg-animated {
+        display: none;
+    }
+}

@@ -324,3 +324,55 @@ console.log('Кнопка смены темы:', themeToggle ? 'найдена' 
 console.log('Карточки образования:', document.querySelectorAll('.education-card').length);
 console.log('Карточки сертификатов:', document.querySelectorAll('.certificate-card').length);
 console.log('Модальные окна:', document.querySelectorAll('.modal').length);
+
+// ========== ФИКСИРОВАННАЯ ШАПКА ПРИ СКРОЛЛЕ ==========
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    const scrollPosition = window.scrollY;
+    
+    if (header) {
+        if (scrollPosition > 100) {
+            header.classList.add('header-scrolled');
+            // Добавляем отступ для body, чтобы контент не заезжал под фиксированную шапку
+            document.body.style.paddingTop = header.offsetHeight + 'px';
+        } else {
+            header.classList.remove('header-scrolled');
+            document.body.style.paddingTop = '0';
+        }
+    }
+});
+
+// ========== ГЛАДКАЯ ПРОКРУТКА ДЛЯ НАВИГАЦИИ ==========
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Закрываем мобильное меню, если оно открыто
+            const navLinks = document.getElementById('navLinks');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            
+            if (navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                if (mobileMenuBtn) {
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+            
+            // Рассчитываем позицию с учетом шапки
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
